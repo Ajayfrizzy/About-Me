@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+    max-width: 1440px;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    color: rgb(107, 106, 106);
+}
+
+section{
+    padding: 0 40px;
+}
+
+#top-name{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: Blue;
+}
+
+.top-links{
+    padding: 1rem 1.5rem;
+}
+
+.h2, .t-align p{
+    padding-top: 0.8rem;
+}
+
+.t-align a{
+    border-bottom: 1px solid blue;
+    padding-bottom: 0.2rem;
+    width: fit-content;
+}
+
+h2{
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    color: rgb(61, 117, 61);
+}
+
+p, td{
+    font-size: 1.2rem;
+}
+
+.d-fl{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+}
+
+.d-fl > div{
+    width: 100%;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 25rem;
+    height: 20rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.bold{
+    font-weight: 700;
+    padding-top: 1.2rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+#p-text{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        padding: 0 20px;
+    }
+
+    .d-fl{
+        flex-direction: column;
+            width: 100vw;
+            margin: auto;
+    }
+
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+
+    #images{
+        margin-top: 5rem;
+    }
+
+    img {
+        padding: 0;
+        margin: 1rem auto;
+        display: block;
+        width: 90%;
+    }
+}
